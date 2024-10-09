@@ -1,0 +1,25 @@
+.cozy-leaf__navbar-container {
+    background-color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    
+}
+
+.cozy-leaf__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cozy-leaf__navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.cozy-leaf__navbar-links p {
+    font-size: 1.5rem;
+    color: var(--main-bg);
+}

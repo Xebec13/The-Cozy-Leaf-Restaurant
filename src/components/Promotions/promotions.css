@@ -1,0 +1,32 @@
+.cozy-leaf__promotions-container {
+  background-color: var(--second-bg);
+}
+
+
+
+.cozy-leaf__promotions-title h1 {
+  color: var(--main-bg);
+}
+
+.cozy-leaf__promotions-info {
+  color: var(--font-color);
+}
+
+.cozy-leaf__promotions-info div > * {
+  flex-basis: 50%;
+}
+
+.cozy-leaf__promotions-info div {
+  display: flex;
+  align-items: baseline;
+  margin: 2.5rem 0;
+  border-bottom: 10px solid ;
+}
+
+.cozy-leaf__promotions-info div h2 {
+  font-size: 3rem;
+}
+
+.cozy-leaf__promotions-info div p {
+  font-size: 1.5rem;
+}

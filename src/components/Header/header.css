@@ -1,0 +1,37 @@
+.cozy-leaf__header-container {
+  background-color: var(--main-bg);
+  color: var(--font-color);
+  display: flex;
+  position: relative;
+}
+
+.cozy-leaf__header-photo {
+  width: 100%;
+}
+
+.cozy-leaf__header-photo img {
+  object-fit: cover;
+  width: 45vw;
+  height: 100%;
+  min-width: 350px;
+}
+
+.cozy-leaf__header-info {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.cozy-leaf__header-info p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.cozy-leaf__header-end {
+  margin: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cozy-leaf__header-end img {
+  width: clamp(200px,20vw,400px);
+}

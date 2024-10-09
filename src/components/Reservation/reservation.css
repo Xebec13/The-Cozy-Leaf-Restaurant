@@ -1,0 +1,120 @@
+.cozy-leaf__reservation-container {
+  background-color: var(--main-bg);
+  display: flex;
+}
+
+.cozy-leaf__reservation-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.cozy-leaf__reservation-info h1 {
+  color: var(--second-bg);
+}
+
+.cozy-leaf__reservation-info p {
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.cozy-leaf__reservation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.cozy-leaf__reservation-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 220px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: none;
+  background-color: var(--font-color);
+  color: var(--second-bg);
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cozy-leaf__reservation-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cozy-leaf__reservation-photo img {
+  width: 80%;
+  height: 80%;
+}
+
+.cozy-leaf__reservation-form {
+  background-color: var(--main-bg);
+  display: flex;
+  color: var(--second-bg);
+  text-align: center;
+}
+
+.cozy-leaf__reservation-form > * {
+  flex-basis: 50%;
+}
+
+.cozy-leaf__reservation-form-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cozy-leaf__reservation-form-image img {
+  width: 80%;
+  height: 80%;
+}
+
+.cozy-leaf__reservation-form-info form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.cozy-leaf__reservation-form-info form input {
+  width: 325px;
+  height: 50px;
+  padding: 1%;
+  font-size: 1rem;
+  text-align: center;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--font-color);
+  color: var(--second-bg);
+  font-weight: 700;
+}
+
+.cozy-leaf__reservation-form-info form input[type='date'] {
+    font-family: var(--font-family);
+}
+
+.cozy-leaf__reservation-form-info form input::placeholder {
+  color: var(--second-bg);
+}
+
+.cozy-leaf__reservation-form-buttons button {
+  gap: 5px;
+  width: 150px;
+  font-size: 1rem;
+  padding: 1%;
+  border: none;
+  background-color: var(--font-color);
+  color: var(--second-bg);
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+}
