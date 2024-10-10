@@ -18,8 +18,8 @@ const Aboutus = () => {
           <p>{data.restaurantInfo[1].info}</p>
         </div>
         <div className="cozy-leaf__aboutus-image">
-          <img src={images.leaf4} alt="leaf-4" />
-          <img src={images.leaf4} alt="leaf-4" />
+          <img src={images.leaf1} alt="leaf-4" />
+          <img src={images.leaf1} alt="leaf-4" />
         </div>
       </div>
     </section>

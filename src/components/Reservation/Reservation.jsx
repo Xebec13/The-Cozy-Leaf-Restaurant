@@ -34,7 +34,7 @@ const Reservation = () => {
             </div>
           </div>
           <div className="cozy-leaf__reservation-photo">
-            <img src={images.cityMap} alt="warsaw" />
+            <img src={images.pinkMotorcycle} alt="warsaw" />
           </div>
         </>
       ) : ( // jeśli showForm jest true, pokazuj formularz rezerwacji

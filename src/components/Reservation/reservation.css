@@ -1,5 +1,5 @@
 .cozy-leaf__reservation-container {
-  background-color: var(--main-bg);
+  background-color: var(--section1-bg);
   display: flex;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .cozy-leaf__reservation-info h1 {
-  color: var(--second-bg);
+  color: var(--font-color);
 }
 
 .cozy-leaf__reservation-info p {
@@ -54,7 +54,6 @@
 }
 
 .cozy-leaf__reservation-form {
-  background-color: var(--main-bg);
   display: flex;
   color: var(--second-bg);
   text-align: center;

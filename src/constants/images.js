@@ -1,5 +1,4 @@
 import aboutUs from '../assets/aboutus-photo.jpg'
-import cityMap from '../assets/city-map.png'
 import gallery1 from '../assets/gallery-1.png'
 import gallery2 from '../assets/gallery-2.png'
 import gallery3 from '../assets/gallery-3.png'
@@ -16,11 +15,13 @@ import leaf5 from '../assets/leaf-5.png'
 import leaf6 from '../assets/leaf-6.png'
 import logo from '../assets/logo.png'
 import promoPhoto from '../assets/promotion-photo.png'
+import pinkMotorcycle from '../assets/pink-motorcycle.jpg'
+import bg5 from '../assets/bg5.jpg'
+import dmcLogo from '../assets/Logo DMC.png'
 
 
 const images = {
     aboutUs,
-    cityMap,
     gallery1,
     gallery2,
     gallery3,
@@ -37,6 +38,9 @@ const images = {
     leaf6,
     logo,
     promoPhoto,
+    pinkMotorcycle,
+    bg5,
+    dmcLogo,
 }
 
 export default images;

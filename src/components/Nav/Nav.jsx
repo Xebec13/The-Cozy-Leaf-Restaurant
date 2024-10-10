@@ -20,6 +20,9 @@ const Nav = () => {
           <a href="#reservation">Reservation</a>
         </p>
         <p>
+          <a href="#gallery">Gallery</a>
+        </p>
+        <p>
           <a href="#contact">Contact</a>
         </p>
       </div>

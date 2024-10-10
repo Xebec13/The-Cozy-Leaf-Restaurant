@@ -1,5 +1,5 @@
 .cozy-leaf__aboutus-container {
-  background-color: var(--font-color);
+  background-color: var(--section3-bg);
   color: var(--second-bg);
   display: flex;
 }
@@ -35,7 +35,7 @@
 }
 
 .cozy-leaf__aboutus-heading h1 {
-  color: var(--main-bg);
+  color: var(--second-bg);
   flex: 1;
   text-align: right;
 }

@@ -4,11 +4,17 @@
 :root {
   --font-family: "Open Sans",sans-serif;
 
+
+  --section1-bg: #f08590da;
+  --section2-bg: #3f8274c9;
+  --section3-bg: #f8c7c8c9;
+  --section4-bg: #ebecdfd0;
+  --gallery-bg: #6faacf;
+
   --main-bg: #f08590;
-  --second-bg: #3f8274;
+  --second-bg: #3F8274;
   --third-bg: #f8c7c8;
   --font-color: #ebecdf;
-  --gallery-bg: #6faacf;
 }
 
 *,

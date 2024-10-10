@@ -2,11 +2,13 @@ import React from 'react'
 import './App.css'
 
 
+
+
 import {Nav,Footer,Header,Gallery,Reservation,Promotions,AboutUs} from './components'
 
 const App = () => {
   return (
-    <div>
+    <div  className='background' >
       <Nav/>
       <Header/>
       <Promotions/>
