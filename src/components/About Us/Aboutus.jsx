@@ -7,7 +7,7 @@ const Aboutus = () => {
   return (
     <section className="cozy-leaf__aboutus-container" id="aboutus">
       <div className="cozy-leaf__aboutus-photo">
-        <img src={images.aboutUs} alt="restaurant" />
+        <img src={images.greenFood} alt="restaurant" />
       </div>
       <div className="cozy-leaf__aboutus-title">
         <div className="cozy-leaf__aboutus-heading">
@@ -16,10 +16,6 @@ const Aboutus = () => {
         </div>
         <div className="cozy-leaf__aboutus-info">
           <p>{data.restaurantInfo[1].info}</p>
-        </div>
-        <div className="cozy-leaf__aboutus-image">
-          <img src={images.leaf1} alt="leaf-4" />
-          <img src={images.leaf1} alt="leaf-4" />
         </div>
       </div>
     </section>

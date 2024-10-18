@@ -4,44 +4,78 @@
   display: flex;
 }
 
+.cozy-leaf__aboutus-photo {
+  width: 100%;
+}
 .cozy-leaf__aboutus-photo img {
+  object-position: center;
   width: 45vw;
+  min-width: 300px;
   height: 100%;
-  min-width: 350px;
 }
 
 .cozy-leaf__aboutus-title {
-  padding: 1rem 2rem;
+  padding: 2rem 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.5rem;
 }
 
-.cozy-leaf__aboutus-image img {
-  position: absolute;
-  width: 12vw;
-  top: 0;
-}
-
-.cozy-leaf__aboutus-title img:nth-child(1) {
-  transform: rotate(-40deg);
-  left: 0;
-}
-
-.cozy-leaf__aboutus-title img:nth-child(2) {
-  transform: rotate(-10deg);
-  left: 80px;
+.cozy-leaf__aboutus-heading {
+  display: grid;
+  align-self: flex-end;
 }
 
 .cozy-leaf__aboutus-heading h1 {
   color: var(--second-bg);
-  flex: 1;
+  
   text-align: right;
 }
 
 .cozy-leaf__aboutus-info p {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.3rem;
+  font-weight: 600;
   text-align: right;
+}
+
+@media screen and (max-width: 1024px) {
+  .cozy-leaf__aboutus-info p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .cozy-leaf__aboutus-heading {
+    align-self: center;
+  }
+
+  .cozy-leaf__aboutus-heading h1 {
+    text-align: center;
+  }
+  .cozy-leaf__aboutus-title {
+    align-self: center;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cozy-leaf__aboutus-container {
+    display: block;
+  }
+  .cozy-leaf__aboutus-title {
+    align-items: center;
+    padding: 1rem;
+  }
+  .cozy-leaf__aboutus-heading {
+    display: inline;
+    align-self: center;
+  }
+  .cozy-leaf__aboutus-photo img {
+    margin: 0 auto;
+    width: 90%;
+  }
+ 
+  .cozy-leaf__aboutus-info p {
+    text-align: center;
+    font-size: .9rem;
+  }
 }

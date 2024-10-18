@@ -78,6 +78,10 @@ const restaurantGallery = [
         image: images.gallery8,
         text: 'Gluten-free and sugar-free options, perfect for everyone.'
     },
+    {
+        image: images.gallery8,
+        text: 'Gluten-free and sugar-free options, perfect for everyone.'
+    },
 ]
 
 const data = { restaurantGallery, restaurantInfo, restaurantPromotions };

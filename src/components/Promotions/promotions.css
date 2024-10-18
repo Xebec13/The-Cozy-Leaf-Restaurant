@@ -2,13 +2,15 @@
   background-color: var(--section2-bg);
 }
 
-
-
 .cozy-leaf__promotions-title h1 {
   color: var(--main-bg);
 }
 
 .cozy-leaf__promotions-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
   color: var(--font-color);
 }
 
@@ -19,14 +21,31 @@
 .cozy-leaf__promotions-info div {
   display: flex;
   align-items: baseline;
-  margin: 2.5rem 0;
-  border-bottom: 10px solid ;
+  border-bottom: 5px solid;
 }
 
 .cozy-leaf__promotions-info div h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .cozy-leaf__promotions-info div p {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cozy-leaf__promotions-info div h2 {
+    font-size: 2rem;
+  }
+  .cozy-leaf__promotions-info div p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cozy-leaf__promotions-info div h2 {
+    font-size: 1.5rem;
+  }
+  .cozy-leaf__promotions-info div p {
+    font-size: 1rem;
+  }
 }

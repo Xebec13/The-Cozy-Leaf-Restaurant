@@ -1,25 +1,124 @@
 .cozy-leaf__navbar-container {
-    background-color: var(--font-color);
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    
+  background-color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; /* Ensure navbar stays on top of content */
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease-in-out;
 }
 
+/* ---------------------------LOGO--------------------------- */
+
+/* Logo section: centers the logo vertically and horizontally */
 .cozy-leaf__navbar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.cozy-leaf__navbar-icon {
+  font-size: 5rem;
+  color: var(--main-bg); /* Dynamic color from CSS variable */
+}
+
+/* ---------------------------NAVBAR--------------------------- */
+/* Desktop Navbar */
 .cozy-leaf__navbar-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.cozy-leaf__navbar-links p a {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--main-bg);
+  white-space: nowrap; /* Prevent wrapping of text */
 }
 
-.cozy-leaf__navbar-links p {
-    font-size: 1.5rem;
-    color: var(--main-bg);
+/* Mobile Navbar */
+.cozy-leaf__navbar-mobile {
+  display: none; /* initllay hidden */
+  width: 100%;
+  gap: 0.5rem;
+}
+.cozy-leaf__navbar-mobile p a {
+  font-size: 2.5rem;
+  color: var(--main-bg);
+}
+/* ---------------------------ANIMATIONS--------------------------- */
+/* Navbar scroll animations */
+.cozy-leaf__navbar-container.hide {
+  transform: translateY(-100%); /* Hides navbar when scrolling down */
+}
+.cozy-leaf__navbar-container.show {
+  transform: translateY(0); /* Shows navbar when scrolling up */
+}
+
+/* Desktop navbar link hover underline animation */
+.cozy-leaf__navbar-links p a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 0;
+}
+.cozy-leaf__navbar-links p a:hover::after {
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-bg);
+}
+
+/* Mobile navbar icon hover shadow */
+.cozy-leaf__navbar-mobile p a:hover {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  transition: filter 0.3s;
+}
+
+/* ---------------------------SCREEN--------------------------- */
+/* Larger screens or zoomed views (min-width 1200px) */
+@media screen and (min-width: 1200px) {
+}
+/* For tablets (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+  .cozy-leaf__navbar-links p a {
+    font-size: 1.2rem;
+  }
+  .cozy-leaf__navbar-icon {
+    font-size: 4rem;
+  }
+}
+/* For mobile screens (max-width 600px) */
+@media screen and (max-width: 600px) {
+  .cozy-leaf__navbar-container {
+    height: 10vh;
+    padding: 10px;
+  }
+  .cozy-leaf__navbar-logo,
+  .cozy-leaf__navbar-links,
+  .cozy-leaf__navbar-icon {
+    display: none; /* Hide desktop elements */
+  }
+  .cozy-leaf__navbar-mobile {
+    display: flex; /* Show mobile navbar */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+/* For smaller moblie screen (max-width 400px) */
+@media screen and (max-width: 400px) {
+  .cozy-leaf__navbar-container {
+    padding: 5px;
+  }
+  .cozy-leaf__navbar-mobile p a {
+    font-size: 2rem;
+  }
 }

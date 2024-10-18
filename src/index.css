@@ -1,18 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 
-
 :root {
-  --font-family: "Open Sans",sans-serif;
-
+  --font-family: "Open Sans", sans-serif;
 
   --section1-bg: #f08590da;
-  --section2-bg: #3f8274c9;
-  --section3-bg: #f8c7c8c9;
-  --section4-bg: #ebecdfd0;
-  --gallery-bg: #6faacf;
+  --section2-bg: #3f8274da;
+  --section3-bg: #f8c7c8da;
+  --section4-bg: #ebecdfda;
 
   --main-bg: #f08590;
-  --second-bg: #3F8274;
+  --second-bg: #3f8274;
   --third-bg: #f8c7c8;
   --font-color: #ebecdf;
 }
@@ -33,4 +30,9 @@ body {
 a {
   color: unset;
   text-decoration: none;
+}
+
+img {
+  display: block;
+  border-radius: 10px;
 }

@@ -12,9 +12,11 @@ import leaf2 from '../assets/leaf-2.png'
 import leaf3 from '../assets/leaf-3.png'
 import leaf4 from '../assets/leaf-4.png'
 import leaf5 from '../assets/leaf-5.png'
-import leaf6 from '../assets/leaf-6.png'
+import leaf6 from '../assets/footer-leaf1.jpeg'
 import logo from '../assets/logo.png'
 import promoPhoto from '../assets/promotion-photo.png'
+import pinkFood from '../assets/pink-food.jpg'
+import greenFood from '../assets/green-food.jpeg'
 import pinkMotorcycle from '../assets/pink-motorcycle.jpg'
 import bg5 from '../assets/bg5.jpg'
 import dmcLogo from '../assets/Logo DMC.png'
@@ -41,6 +43,8 @@ const images = {
     pinkMotorcycle,
     bg5,
     dmcLogo,
+    pinkFood,
+    greenFood,
 }
 
 export default images;

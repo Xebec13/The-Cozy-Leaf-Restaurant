@@ -2,8 +2,6 @@ import React from 'react'
 import './App.css'
 
 
-
-
 import {Nav,Footer,Header,Gallery,Reservation,Promotions,AboutUs} from './components'
 
 const App = () => {
