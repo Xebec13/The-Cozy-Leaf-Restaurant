@@ -26,15 +26,15 @@ const Reservation = () => {
             <p>{data.restaurantInfo[2].info}</p>
             <div className="cozy-leaf__reservation-buttons">
               <button onClick={handleReservationClick}>
-                <IoPeopleSharp size={27} /> Reservation
+                <IoPeopleSharp/> Reservation
               </button>
               <button>
-                <MdLocalPhone size={27} /> 690 654 666
+                <MdLocalPhone/> 690 654 666
               </button>
             </div>
           </div>
           <div className="cozy-leaf__reservation-photo">
-            <img src={images.pinkMotorcycle} alt="warsaw" />
+            <img src={images.pinkRestaurant} alt="warsaw" />
           </div>
         </>
       ) : ( // jeśli showForm jest true, pokazuj formularz rezerwacji

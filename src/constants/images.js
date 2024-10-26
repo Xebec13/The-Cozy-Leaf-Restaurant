@@ -20,6 +20,8 @@ import greenFood from '../assets/green-food.jpeg'
 import pinkMotorcycle from '../assets/pink-motorcycle.jpg'
 import bg5 from '../assets/bg5.jpg'
 import dmcLogo from '../assets/Logo DMC.png'
+import pinkCar from '../assets/pinkcar.jpg'
+import pinkRestaurant from '../assets/pinkRestaurant.jpg'
 
 
 const images = {
@@ -45,6 +47,8 @@ const images = {
     dmcLogo,
     pinkFood,
     greenFood,
+    pinkCar,
+    pinkRestaurant,
 }
 
 export default images;

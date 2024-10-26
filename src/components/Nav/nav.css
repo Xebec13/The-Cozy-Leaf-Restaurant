@@ -12,7 +12,7 @@
   transition: transform 0.3s ease-in-out;
 }
 .cozy-leaf__navbar-container > * {
-  margin: 0 15px;
+  padding: 0 5px;
 }
 
 /* ---------------------------LOGO--------------------------- */
@@ -94,7 +94,7 @@
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
   .cozy-leaf__navbar-links p a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
 }
@@ -118,6 +118,7 @@
 /* For smaller moblie screen (max-width 400px) */
 @media screen and (max-width: 400px) {
   .cozy-leaf__navbar-container {
+    height: 8vh;
     padding: 5px;
   }
   .cozy-leaf__navbar-mobile p a {

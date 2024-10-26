@@ -1,79 +1,77 @@
 .cozy-leaf__reservation-container {
   background-color: var(--section1-bg);
   display: flex;
+  gap: 1.5rem;
 }
-
+/* ---------------------------INFO SECTION--------------------------- */
 .cozy-leaf__reservation-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
-
 .cozy-leaf__reservation-info h1 {
   color: var(--font-color);
 }
-
 .cozy-leaf__reservation-info p {
   color: var(--font-color);
   font-size: 1.5rem;
-  margin-top: 3rem;
 }
-
+/* ---------------------------BUTTONS--------------------------- */
 .cozy-leaf__reservation-buttons {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 5rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-
 .cozy-leaf__reservation-buttons button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
-  width: 220px;
+  gap: 2px;
   font-size: 1.5rem;
-  padding: 1rem;
-  border: none;
+  font-weight: 700;
   background-color: var(--font-color);
   color: var(--second-bg);
-  font-weight: 700;
+  border: none;
   border-radius: 10px;
+  padding: 1rem;
   cursor: pointer;
 }
-
+/* ---------------------------PHOTO SECTION--------------------------- */
 .cozy-leaf__reservation-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  height: 100%;
 }
-
 .cozy-leaf__reservation-photo img {
-  width: 80%;
-  height: 80%;
+  object-fit: cover;
+  width: 40vw;
+  min-width: 250px;
+  min-height: 200px;
+  height: 100%;
 }
 
+/* ------------------------------SECOND SECTION----------------------------------- */
+/* ---------------------------FROM SECTION--------------------------- */
 .cozy-leaf__reservation-form {
   display: flex;
   color: var(--second-bg);
   text-align: center;
 }
-
 .cozy-leaf__reservation-form > * {
   flex-basis: 50%;
 }
-
+/* FORM IMAGE */
 .cozy-leaf__reservation-form-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .cozy-leaf__reservation-form-image img {
   width: 80%;
   height: 80%;
 }
 
+/* FORM STYLE */
 .cozy-leaf__reservation-form-info form {
   display: flex;
   justify-content: center;
@@ -81,7 +79,7 @@
   flex-direction: column;
   margin-top: 2.5rem;
 }
-
+/* FORM INPUT */
 .cozy-leaf__reservation-form-info form input {
   width: 325px;
   height: 50px;
@@ -95,15 +93,14 @@
   color: var(--second-bg);
   font-weight: 700;
 }
-
-.cozy-leaf__reservation-form-info form input[type='date'] {
-    font-family: var(--font-family);
+.cozy-leaf__reservation-form-info form input[type="date"] {
+  font-family: var(--font-family);
 }
-
+/* PLACEHOLDER */
 .cozy-leaf__reservation-form-info form input::placeholder {
   color: var(--second-bg);
 }
-
+/* ---------------------------RESERVATION BUTTONS--------------------------- */
 .cozy-leaf__reservation-form-buttons button {
   gap: 5px;
   width: 150px;
@@ -116,4 +113,52 @@
   border-radius: 10px;
   cursor: pointer;
   margin: 1rem 0.5rem;
+}
+
+/* ---------------------------SCREEN--------------------------- */
+/* For tablets (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+  .cozy-leaf__reservation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .cozy-leaf__reservation-info p {
+    font-size: 1.2rem;
+  }
+  .cozy-leaf__reservation-buttons button {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    padding: 0.8rem;
+  }
+}
+/* For mobile screens (max-width 600px) */
+@media screen and (max-width: 600px) {
+  .cozy-leaf__reservation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .cozy-leaf__reservation-photo {
+    width: 100%;
+    height: 50%;
+  }
+  .cozy-leaf__reservation-photo img {
+    width: 100%;
+  }
+  .cozy-leaf__reservation-info p {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile screens (max-width 400px) */
+@media screen and (max-width: 400px) {
+  .cozy-leaf__reservation-buttons button {
+    font-size: .8rem;
+  }
+  .cozy-leaf__reservation-info p {
+    font-size: .8rem;
+  }
 }
