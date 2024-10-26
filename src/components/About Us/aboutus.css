@@ -1,81 +1,82 @@
 .cozy-leaf__aboutus-container {
-  background-color: var(--section3-bg);
-  color: var(--second-bg);
+  background-color: var(--section3-bg); 
+  color: var(--second-bg); 
   display: flex;
 }
 
+/* ---------------------------PHOTO SECTION--------------------------- */
 .cozy-leaf__aboutus-photo {
-  width: 100%;
+  width: 100%; 
+  
 }
 .cozy-leaf__aboutus-photo img {
-  object-position: center;
-  width: 45vw;
-  min-width: 300px;
+  object-position: center; 
+  width: 45vw; /* Takes 45% of the viewport width */
+  min-width: 300px; /* Minimum width for responsiveness */
   height: 100%;
 }
 
+/* ---------------------------TITLE SECTION--------------------------- */
 .cozy-leaf__aboutus-title {
-  padding: 2rem 1rem;
-  position: relative;
+  padding: 2rem 1rem; /* Spacing around title section */
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  flex-direction: column; 
+  gap: 1.5rem; /* Space between elements */
 }
-
 .cozy-leaf__aboutus-heading {
-  display: grid;
-  align-self: flex-end;
+  display: grid; /* Centers the heading within the grid */
+  align-self: flex-end; 
 }
-
 .cozy-leaf__aboutus-heading h1 {
-  color: var(--second-bg);
-  
-  text-align: right;
+  color: var(--second-bg); 
+  text-align: right; 
 }
 
+/* ---------------------------INFO SECTION--------------------------- */
 .cozy-leaf__aboutus-info p {
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-align: right;
+  font-size: 1.3rem; /* Default font size for larger screens */
+  font-weight: 600; 
+  text-align: right; 
 }
 
+/* ---------------------------SCREEN--------------------------- */
+/* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
   .cozy-leaf__aboutus-info p {
-    font-size: 1rem;
-    text-align: center;
+    font-size: 1rem; 
+    text-align: center; /* Centered text for better readability */
   }
   .cozy-leaf__aboutus-heading {
-    align-self: center;
+    align-self: center; /* Centers heading */
   }
-
   .cozy-leaf__aboutus-heading h1 {
-    text-align: center;
+    text-align: center; /* Centered heading text */
   }
   .cozy-leaf__aboutus-title {
-    align-self: center;
-    padding: 2rem;
+    align-self: center; 
+    padding: 2rem; 
   }
 }
 
+/* For mobile screens (max-width 600px) */
 @media screen and (max-width: 600px) {
   .cozy-leaf__aboutus-container {
-    display: block;
+    display: block; /* Stacks sections vertically */
   }
   .cozy-leaf__aboutus-title {
-    align-items: center;
-    padding: 1rem;
+    align-items: center; /* Centers title content */
+    padding: 1rem; 
   }
   .cozy-leaf__aboutus-heading {
-    display: inline;
+    display: inline; 
     align-self: center;
   }
   .cozy-leaf__aboutus-photo img {
-    margin: 0 auto;
-    width: 90%;
+    margin: 0 auto; /* Centers image */
+    
   }
- 
   .cozy-leaf__aboutus-info p {
-    text-align: center;
-    font-size: .9rem;
+    text-align: center; /* Centered text for readability */
+    font-size: .9rem; /* Smaller font size for mobile */
   }
 }

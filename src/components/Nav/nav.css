@@ -9,22 +9,26 @@
   top: 0;
   left: 0;
   z-index: 100; /* Ensure navbar stays on top of content */
-  padding: 1rem 2rem;
   transition: transform 0.3s ease-in-out;
+}
+.cozy-leaf__navbar-container > * {
+  margin: 0 15px;
 }
 
 /* ---------------------------LOGO--------------------------- */
-
-/* Logo section: centers the logo vertically and horizontally */
 .cozy-leaf__navbar-logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  position: relative;
 }
 
 .cozy-leaf__navbar-icon {
-  font-size: 5rem;
-  color: var(--main-bg); /* Dynamic color from CSS variable */
+  font-size: 5.5rem;
+  position: relative;
+  top: 5px;
+  left: 15px;
+  color: var(--main-bg); 
 }
 
 /* ---------------------------NAVBAR--------------------------- */
@@ -37,7 +41,7 @@
 }
 .cozy-leaf__navbar-links p a {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--main-bg);
   white-space: nowrap; /* Prevent wrapping of text */
 }
@@ -90,11 +94,9 @@
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
   .cozy-leaf__navbar-links p a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
-  .cozy-leaf__navbar-icon {
-    font-size: 4rem;
-  }
+  
 }
 /* For mobile screens (max-width 600px) */
 @media screen and (max-width: 600px) {
