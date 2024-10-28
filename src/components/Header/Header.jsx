@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <section className="cozy-leaf__header-container" id="header">
       <div className="cozy-leaf__header-photo">
-        <img src={images.pinkRestaurant} alt="restaurant" />
+        <img src={images.headerRestaurant} alt="restaurant" />
       </div>
       <div className="cozy-leaf__header-info">
         <h1>{data.restaurantInfo[0].title}</h1>

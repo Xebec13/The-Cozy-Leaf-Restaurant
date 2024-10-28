@@ -140,6 +140,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    gap: 2rem;
   }
   .cozy-leaf__reservation-photo {
     width: 100%;
@@ -156,9 +157,6 @@
 /* For mobile screens (max-width 400px) */
 @media screen and (max-width: 400px) {
   .cozy-leaf__reservation-buttons button {
-    font-size: .8rem;
-  }
-  .cozy-leaf__reservation-info p {
     font-size: .8rem;
   }
 }

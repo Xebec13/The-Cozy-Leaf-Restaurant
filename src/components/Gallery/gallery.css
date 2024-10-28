@@ -1,4 +1,30 @@
-.cozy-leaf__galery-container {
+.cozy-leaf__gallery-container {
+  height: 100%;
   background-color: var(--section3-bg);
+  columns: 400px;
+}
+/* ---------------------------GALLERY--------------------------- */
+.cozy-leaf__gallery-wrapper img {
+  width: 100%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+
+}
+
+/* ---------------------------GALLERY ANIMATIONS--------------------------- */
+.cozy-leaf__gallery-wrapper img:hover {
   
+}
+/* ---------------------------SCREEN--------------------------- */
+/* For tablets (max-width 1024px) */
+@media screen and (max-width: 1024px) {
+  .cozy-leaf__gallery-container {
+    columns: 250px;
+  }
+}
+/* For mobile screens (max-width 600px) */
+@media screen and (max-width: 600px) {
+  .cozy-leaf__gallery-container {
+    columns: 150px;
+  }
 }

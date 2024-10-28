@@ -47,8 +47,13 @@
 
 /* For mobile screens (max-width 600px) */
 @media screen and (max-width: 600px) {
+  .cozy-leaf__promotions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .cozy-leaf__promotions-info {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .cozy-leaf__promotions-info div h2 {
     font-size: 1.5rem;

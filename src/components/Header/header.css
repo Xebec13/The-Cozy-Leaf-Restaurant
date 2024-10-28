@@ -13,7 +13,7 @@
   height: 100%;
 }
 .cozy-leaf__header-photo img {
-  object-fit: cover; 
+  object-fit: cover;
   width: 45vw; 
   min-width: 250px; 
   min-height: 250px;
@@ -43,7 +43,7 @@
   position: relative; 
   color: var(--section2-bg);
   inset: 0;
-  height: clamp(150px,22vw,300px);
+  height: clamp(100px,22vw,300px);
   width: clamp(100px,22vw,250px);
 }
 

@@ -45,7 +45,7 @@
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
   .cozy-leaf__aboutus-info p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -53,9 +53,9 @@
 @media screen and (max-width: 600px) {
   .cozy-leaf__aboutus-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
   }
   .cozy-leaf__aboutus-heading {
     align-self: center;
@@ -78,9 +78,7 @@
 /* For mobile screens (max-width 400px) */
 @media screen and (max-width: 400px) {
   .cozy-leaf__aboutus-container {
+    justify-content: flex-start;
     gap: .5rem;
-  }
-  .cozy-leaf__aboutus-info p {
-    font-size: .8rem;
   }
 }

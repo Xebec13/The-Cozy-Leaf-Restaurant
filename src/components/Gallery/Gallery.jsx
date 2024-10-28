@@ -1,10 +1,30 @@
 import React from "react";
 import "./gallery.css";
 
-// import { images,data } from "../../constants/index";
+import { images } from "../../constants/index";
+
+const galleryImages = [
+  images.gallery1,
+  images.gallery2,
+  images.gallery3,
+  images.gallery5,
+  images.gallery6,
+  images.gallery7,
+  images.gallery9,
+  images.gallery11,
+  images.gallery13,
+];
 
 const Gallery = () => {
-  return <section className="cozy-leaf__galery-container" id='gallery'></section>;
+  return (
+    <section className="cozy-leaf__gallery-container" id="gallery">
+      {galleryImages.map((image, index) => (
+        <div className="cozy-leaf__gallery-wrapper" key={index}>
+          <img src={image} alt={`gallery${index + 1}`} />
+        </div>
+      ))}
+    </section>
+  );
 };
 
 export default Gallery;
