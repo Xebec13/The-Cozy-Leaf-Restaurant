@@ -20,7 +20,7 @@
 /* ---------------------------BUTTONS--------------------------- */
 .cozy-leaf__reservation-buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -44,8 +44,8 @@
 }
 .cozy-leaf__reservation-photo img {
   object-fit: cover;
-  width: 40vw;
-  min-width: 250px;
+  width: 100%;
+  min-width: 350px;
   min-height: 200px;
   height: 100%;
 }
@@ -54,39 +54,49 @@
 /* ---------------------------FROM SECTION--------------------------- */
 .cozy-leaf__reservation-form {
   display: flex;
-  color: var(--second-bg);
   text-align: center;
+  color: var(--second-bg);
+  gap: 1.5rem;
 }
 .cozy-leaf__reservation-form > * {
   flex-basis: 50%;
 }
 /* FORM IMAGE */
 .cozy-leaf__reservation-form-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%; 
+  height: 100%;
 }
 .cozy-leaf__reservation-form-image img {
-  width: 80%;
-  height: 80%;
+  object-fit: cover;
+  width: 45vw; 
+  min-width: 250px; 
+  min-height: 250px;
+  height: 100%; 
 }
 
 /* FORM STYLE */
+.cozy-leaf__reservation-form-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
 .cozy-leaf__reservation-form-info form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2.5rem;
 }
 /* FORM INPUT */
 .cozy-leaf__reservation-form-info form input {
-  width: 325px;
-  height: 50px;
+  width: 20vw;
+  min-width: 200px;
+  height: 40px;
   padding: 1%;
   font-size: 1rem;
   text-align: center;
   margin: 5px 0;
+  outline: none;
   border: none;
   border-radius: 5px;
   background-color: var(--font-color);
@@ -100,10 +110,12 @@
 .cozy-leaf__reservation-form-info form input::placeholder {
   color: var(--second-bg);
 }
+
 /* ---------------------------RESERVATION BUTTONS--------------------------- */
 .cozy-leaf__reservation-form-buttons button {
   gap: 5px;
-  width: 150px;
+  width: 10vw;
+  min-width: 100px;
   font-size: 1rem;
   padding: 1%;
   border: none;
@@ -124,8 +136,12 @@
     justify-content: center;
     gap: 0.5rem;
   }
+  .cozy-leaf__reservation-form-image,
   .cozy-leaf__reservation-info p {
     font-size: 1.2rem;
+  }
+  .cozy-leaf__reservation-photo img {
+    min-width: 250px;
   }
   .cozy-leaf__reservation-buttons button {
     font-size: 1.2rem;
@@ -135,28 +151,43 @@
 }
 /* For mobile screens (max-width 600px) */
 @media screen and (max-width: 600px) {
-  .cozy-leaf__reservation-container {
+  .cozy-leaf__reservation-container,
+  .cozy-leaf__reservation-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1rem;
   }
-  .cozy-leaf__reservation-photo {
+  .cozy-leaf__reservation-form-info {
+    gap: .5rem;
+  }
+  .cozy-leaf__reservation-photo,
+  .cozy-leaf__reservation-form-image {
     width: 100%;
     height: 50%;
   }
-  .cozy-leaf__reservation-photo img {
+  .cozy-leaf__reservation-photo img,
+  .cozy-leaf__reservation-form-image img {
     width: 100%;
   }
   .cozy-leaf__reservation-info p {
     font-size: 1rem;
+  }
+  .cozy-leaf__reservation-form-info form input {
+    font-size: .8rem;
+  }
+  .cozy-leaf__reservation-buttons button {
+    font-size: .8rem;
   }
 }
 
 /* For mobile screens (max-width 400px) */
 @media screen and (max-width: 400px) {
   .cozy-leaf__reservation-buttons button {
+    font-size: .8rem;
+  }
+  .cozy-leaf__reservation-form-buttons button {
     font-size: .8rem;
   }
 }

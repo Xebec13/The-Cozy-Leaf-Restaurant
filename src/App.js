@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 
 
-import {Nav,Footer,Header,Gallery,Reservation,Promotions,AboutUs} from './components'
+import {Nav,Footer,Header,Gallery,Reservation,Promotions,AboutUs,Carousel} from './components'
 
 const App = () => {
   return (

@@ -1,13 +1,14 @@
 import React from "react";
 import "./aboutus.css";
+import Carousel from "../Carousel/Carousel";
 
-import { images, data } from "../../constants/index";
+import { data } from "../../constants/index";
 
 const Aboutus = () => {
   return (
     <section className="cozy-leaf__aboutus-container" id="aboutus">
       <div className="cozy-leaf__aboutus-photo">
-        <img src={images.greenFood} alt="restaurant" />
+      <Carousel/>
       </div>
       <div className="cozy-leaf__aboutus-title">
         <div className="cozy-leaf__aboutus-heading">

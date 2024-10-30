@@ -12,6 +12,13 @@ import gallery7 from '../assets/gallery-7.webp'
 import gallery9 from '../assets/gallery-9.webp'
 import gallery11 from '../assets/gallery-11.webp'
 import gallery13 from '../assets/gallery-13.webp'
+import slider1 from '../assets/slider-r-1.jpg'
+import slider2 from '../assets/slider-r-2.png'
+import slider3 from '../assets/slider-r-3.webp'
+import slider4 from '../assets/slider-4.webp'
+import slider5 from '../assets/slider-5.webp'
+import slider6 from '../assets/slider-6.webp'
+import slider7 from '../assets/slider-7.webp'
 
 
 const images = {
@@ -29,6 +36,13 @@ const images = {
     gallery9,
     gallery11,
     gallery13,
+    slider1,
+    slider2,
+    slider3,
+    slider4,
+    slider5,
+    slider6,
+    slider7,
 }
 
 export default images;

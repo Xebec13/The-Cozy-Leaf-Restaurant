@@ -10,9 +10,6 @@ const galleryImages = [
   images.gallery5,
   images.gallery6,
   images.gallery7,
-  images.gallery9,
-  images.gallery11,
-  images.gallery13,
 ];
 
 const Gallery = () => {

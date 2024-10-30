@@ -5,6 +5,7 @@ import AboutUs from './About Us/Aboutus'
 import Gallery from './Gallery/Gallery'
 import Promotions from './Promotions/Promotions'
 import Reservation from './Reservation/Reservation'
+import Carousel from './Carousel/Carousel'
 
 export {
     Nav,
@@ -14,4 +15,5 @@ export {
     Reservation,
     Gallery,
     Footer,
+    Carousel
 }

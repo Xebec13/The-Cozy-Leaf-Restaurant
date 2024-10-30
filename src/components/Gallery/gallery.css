@@ -1,7 +1,7 @@
 .cozy-leaf__gallery-container {
   height: 100%;
   background-color: var(--section3-bg);
-  columns: 400px;
+  columns: 400px 3;
 }
 /* ---------------------------GALLERY--------------------------- */
 .cozy-leaf__gallery-wrapper img {
@@ -25,6 +25,6 @@
 /* For mobile screens (max-width 600px) */
 @media screen and (max-width: 600px) {
   .cozy-leaf__gallery-container {
-    columns: 150px;
+    columns: 150px 2;
   }
 }

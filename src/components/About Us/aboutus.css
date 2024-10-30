@@ -12,8 +12,8 @@
 }
 .cozy-leaf__aboutus-photo img {
   object-fit: cover;
-  width: 40vw;
-  min-width: 250px;
+  width: 45vw;
+  min-width: 450px;
   min-height: 200px;
   height: 100%;
 }
@@ -44,8 +44,11 @@
 /* ---------------------------SCREEN--------------------------- */
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
+  .cozy-leaf__aboutus-photo img {
+    min-width: 300px;
+  }
   .cozy-leaf__aboutus-info p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 

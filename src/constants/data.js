@@ -59,27 +59,27 @@ const restaurantGallery = [
         text: '100% vegan menu, packed with healthy and tasty dishes.'
     },
     {
-        image: images.gallery4,
+        image: images.gallery5,
         text: 'Relaxing atmosphere inspired by nature and harmony.'
     },
     {
-        image: images.gallery5,
+        image: images.gallery6,
         text: 'Fast, eco-friendly delivery at your convenience.'
     },
     {
-        image: images.gallery6,
+        image: images.gallery7,
         text: 'Top-quality ingredients for great taste and wellness.'
     },
     {
-        image: images.gallery7,
+        image: images.gallery9,
         text: 'Eco-conscious decor and zero-waste principles.'
     },
     {
-        image: images.gallery8,
+        image: images.gallery11,
         text: 'Gluten-free and sugar-free options, perfect for everyone.'
     },
     {
-        image: images.gallery8,
+        image: images.gallery13,
         text: 'Gluten-free and sugar-free options, perfect for everyone.'
     },
 ]

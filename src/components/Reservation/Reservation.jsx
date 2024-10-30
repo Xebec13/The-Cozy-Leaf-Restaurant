@@ -7,7 +7,8 @@ import { IoPeopleSharp } from "react-icons/io5";
 import { MdLocalPhone } from "react-icons/md";
 
 const Reservation = () => {
-  const [showForm, setShowForm] = useState(false); // stan do zarządzania widokiem formularza
+  const [showForm, setShowForm] = useState(0); // stan do zarządzania widokiem formularza
+  const [fadeStyle, setFadeStyle] = useState({ opacity: 1 });
 
   const handleReservationClick = () => {
     setShowForm(true); // zmień stan na true, aby pokazać formularz
@@ -16,6 +17,7 @@ const Reservation = () => {
   const handleBackClick = () => {
     setShowForm(false); // zmień stan na false, aby pokazać sekcję rezerwacji
   };
+  
 
   return (
     <section className="cozy-leaf__reservation-container" id='reservation'>
@@ -40,10 +42,10 @@ const Reservation = () => {
       ) : ( // jeśli showForm jest true, pokazuj formularz rezerwacji
         <div className="cozy-leaf__reservation-form">
           <div className="cozy-leaf__reservation-form-image">
-            <img src={images.leaf1} alt="" />
+            <img src={images.headerRestaurant} alt="" />
           </div>
           <div className="cozy-leaf__reservation-form-info">
-            <h1>Plan Your Visit, Taste the Green Magic!</h1>
+            <h1>Taste the Green Magic!</h1>
             <form>
               <input type="date" placeholder="Select Date" required />
               <input

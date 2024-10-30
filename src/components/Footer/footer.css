@@ -80,9 +80,6 @@
 /* ---------------------------SCREEN--------------------------- */
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
-  .cozy-leaf__footer-info h1 {
-    font-size: 3rem;
-  }
   .cozy-leaf__footer-time {
     width: 95%;
   }
@@ -104,13 +101,14 @@
   .cozy-leaf__footer-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.5rem;
   }
   .cozy-leaf__footer-info-container {
     flex-direction: row;
-    gap: .5rem;
+    gap: 0.5rem;
   }
-  .cozy-leaf__footer-icons{
+  .cozy-leaf__footer-icons {
     width: 40%;
   }
   .cozy-leaf__footer-time p span {
