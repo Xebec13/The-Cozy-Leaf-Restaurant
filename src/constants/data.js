@@ -1,5 +1,4 @@
-import images from './images'
-
+import { images } from '../constants/index'
 const restaurantInfo = [
     {
         title: 'The Cozy Leaf',
@@ -15,9 +14,6 @@ const restaurantInfo = [
         info: `Find us throughout the city, offering convenient locations wherever you are. Delivery is available until midnight, ensuring you can enjoy our dishes late into the night.`
     }
 ]
-
-
-
 
 
 
@@ -47,42 +43,31 @@ const restaurantPromotions = [
 
 const restaurantGallery = [
     {
-        image: images.gallery1,
-        text: 'Fresh, organic ingredients sourced from local suppliers.'
+        text: 'Fresh, organic ingredients sourced from local suppliers.',
+        image: images.gallery13
     },
     {
-        image: images.gallery2,
-        text: 'Pet-friendly environment – bring your furry friends!'
+        text: 'Pet-friendly environment – bring your furry friends!',
+        image: images.gallery2
     },
     {
-        image: images.gallery3,
-        text: '100% vegan menu, packed with healthy and tasty dishes.'
+        text: '100% vegan menu, packed with healthy and tasty dishes.',
+        image: images.gallery3
     },
     {
-        image: images.gallery5,
-        text: 'Relaxing atmosphere inspired by nature and harmony.'
+        text: 'Relaxing atmosphere inspired by nature and harmony.',
+        image: images.gallery5
+
     },
     {
-        image: images.gallery6,
-        text: 'Fast, eco-friendly delivery at your convenience.'
+        text: 'Fast, eco-friendly delivery at your convenience.',
+        image: images.gallery6
     },
     {
-        image: images.gallery7,
-        text: 'Top-quality ingredients for great taste and wellness.'
-    },
-    {
-        image: images.gallery9,
-        text: 'Eco-conscious decor and zero-waste principles.'
-    },
-    {
-        image: images.gallery11,
-        text: 'Gluten-free and sugar-free options, perfect for everyone.'
-    },
-    {
-        image: images.gallery13,
-        text: 'Gluten-free and sugar-free options, perfect for everyone.'
+        text: 'Top-quality ingredients for great taste and wellness.',
+        image: images.gallery7
     },
 ]
 
-const data = { restaurantGallery, restaurantInfo, restaurantPromotions };
+const data = { restaurantInfo, restaurantPromotions, restaurantGallery };
 export default data

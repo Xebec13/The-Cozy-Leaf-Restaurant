@@ -19,6 +19,13 @@ import slider4 from '../assets/slider-4.webp'
 import slider5 from '../assets/slider-5.webp'
 import slider6 from '../assets/slider-6.webp'
 import slider7 from '../assets/slider-7.webp'
+import map from '../assets/p3.avif'
+import r1 from '../assets/r1.avif'
+import r2 from '../assets/r2.jpg'
+import r3 from '../assets/r3.avif'
+import r4 from '../assets/r4.avif'
+import r5 from '../assets/r5.jpg'
+import r6 from '../assets/r6.png'
 
 
 const images = {
@@ -43,6 +50,13 @@ const images = {
     slider5,
     slider6,
     slider7,
+    r1,
+    r2,
+    r3,
+    r4,
+    r5,
+    r6,
+    map
 }
 
 export default images;

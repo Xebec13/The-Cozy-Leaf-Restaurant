@@ -41,7 +41,7 @@ const Footer = () => {
             <p>
               <FaInstagramSquare className="footer-icon" /> <FaFacebookF className="footer-icon" />
             </p>
-            <p>contact@cozy-leaf.pl</p>
+            <p>contact@cozy-leaf.eu</p>
             <p>690 654 666</p>
             <p className="cozy-leaf__footer-company">Brought to life by Xebec13 – DMC. <img src={images.dmcLogo} alt="" /></p>
           </div>

@@ -8,7 +8,6 @@ import { MdLocalPhone } from "react-icons/md";
 
 const Reservation = () => {
   const [showForm, setShowForm] = useState(0); // stan do zarządzania widokiem formularza
-  const [fadeStyle, setFadeStyle] = useState({ opacity: 1 });
 
   const handleReservationClick = () => {
     setShowForm(true); // zmień stan na true, aby pokazać formularz
@@ -36,17 +35,17 @@ const Reservation = () => {
             </div>
           </div>
           <div className="cozy-leaf__reservation-photo">
-            <img src={images.pinkRestaurant} alt="warsaw" />
+            <img src={images.map} alt="warsaw" />
           </div>
         </>
       ) : ( // jeśli showForm jest true, pokazuj formularz rezerwacji
         <div className="cozy-leaf__reservation-form">
           <div className="cozy-leaf__reservation-form-image">
-            <img src={images.headerRestaurant} alt="" />
+            <img src={images.r6} alt="" />
           </div>
           <div className="cozy-leaf__reservation-form-info">
             <h1>Taste the Green Magic!</h1>
-            <form>
+            <form id="reservation-form">
               <input type="date" placeholder="Select Date" required />
               <input
                 type="number"

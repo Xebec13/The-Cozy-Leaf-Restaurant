@@ -1,30 +1,70 @@
 .cozy-leaf__gallery-container {
   height: 100%;
   background-color: var(--section3-bg);
-  columns: 400px 3;
+  columns: 400px 3; /* Set column layout for the gallery */
 }
-/* ---------------------------GALLERY--------------------------- */
-.cozy-leaf__gallery-wrapper img {
-  width: 100%;
-  margin-bottom: 1rem;
-  object-fit: cover;
 
+/* ---------------------------GALLERY--------------------------- */
+.cozy-leaf__gallery-wrapper {
+  position: relative; /* Establish positioning for child elements */
+}
+
+.cozy-leaf__gallery-wrapper img {
+  width: 100%; /* Make images responsive */
+  margin-bottom: 1rem; /* Space between images */
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+.cozy-leaf__gallery-content {
+  position: absolute; /* Overlay content on images */
+  top: 0; 
+  width: 100%;
+  height: 100%;
+  color: inherit; /* Inherit color from parent */
+  display: flex; /* Center text */
+  align-items: center;
+  text-align: center;
+  padding: 3%;
+  opacity: 0; /* Start with transparent content */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.cozy-leaf__gallery-content p {
+  font-size: 24px; /* Set font size */
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.5), /* Light shadow */
+    2px 2px 0 rgba(0, 0, 0, 0.5), /* Deeper shadow */
+    3px 3px 0 rgba(0, 0, 0, 0.5); /* Deepest shadow */
+  transform: translateZ(0); /* Enable shadow effect */
+  transition: transform 0.3s ease; /* Smooth transition on interaction */
+}
+
+.cozy-leaf__gallery-wrapper:nth-child(odd) .cozy-leaf__gallery-content {
+  background-color: #f08590a2; /* Background color for odd elements */
+  color: #fff; /* Text color for odd elements */
+}
+
+.cozy-leaf__gallery-wrapper:nth-child(even) .cozy-leaf__gallery-content {
+  background-color: #3f8274a2; /* Background color for even elements */
+  color: var(--main-bg); /* Text color for even elements */
 }
 
 /* ---------------------------GALLERY ANIMATIONS--------------------------- */
-.cozy-leaf__gallery-wrapper img:hover {
-  
+.cozy-leaf__gallery-wrapper:hover .cozy-leaf__gallery-content {
+  opacity: 1; /* Show content on hover */
 }
+
 /* ---------------------------SCREEN--------------------------- */
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
   .cozy-leaf__gallery-container {
-    columns: 250px;
+    columns: 250px; /* Adjust columns for tablets */
   }
 }
+
 /* For mobile screens (max-width 600px) */
 @media screen and (max-width: 600px) {
   .cozy-leaf__gallery-container {
-    columns: 150px 2;
+    columns: 150px 2; /* Adjust columns for mobile */
   }
 }

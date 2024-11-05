@@ -26,7 +26,7 @@ h1 {
   }
 }
 
-/* 425px  */
+/* 600px  */
 @media screen and (max-width: 600px) {
   section {
     height: 80vh;
@@ -39,6 +39,7 @@ h1 {
   }
 }
 
+/* 400px  */
 @media screen and (max-width: 400px) {
   section {
     height: 100%;
