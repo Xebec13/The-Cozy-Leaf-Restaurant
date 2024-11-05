@@ -30,7 +30,7 @@
 }
 
 .cozy-leaf__gallery-content p {
-  font-size: 24px; /* Set font size */
+  font-size: 2rem;
   text-shadow: 
     1px 1px 0 rgba(0, 0, 0, 0.5), /* Light shadow */
     2px 2px 0 rgba(0, 0, 0, 0.5), /* Deeper shadow */
@@ -66,5 +66,8 @@
 @media screen and (max-width: 600px) {
   .cozy-leaf__gallery-container {
     columns: 150px 2; /* Adjust columns for mobile */
+  }
+  .cozy-leaf__gallery-content p {
+    font-size: 1rem;
   }
 }
