@@ -114,6 +114,9 @@
     justify-content: space-evenly;
     align-items: center;
   }
+  .cozy-leaf__navbar-mobile p a {
+    display: flex;
+  }
 }
 /* For smaller moblie screen (max-width 400px) */
 @media screen and (max-width: 400px) {
