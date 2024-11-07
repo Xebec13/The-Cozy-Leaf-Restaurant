@@ -59,7 +59,7 @@ const Reservation = () => {
             </form>
             <div className="cozy-leaf__reservation-form-buttons">
               <button>Submit</button>
-              <button onClick={handleBackClick}>Back</button> {/* przycisk do powrotu */}
+              <button  onClick={handleBackClick}>Back</button> {/* przycisk do powrotu */}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
   background-color: var(--section2-bg);
   display: flex;
   gap: 1.5rem;
+  height: 100%;
 }
 
 .cozy-leaf__footer-info {

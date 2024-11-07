@@ -88,9 +88,7 @@
 }
 
 /* ---------------------------SCREEN--------------------------- */
-/* Larger screens or zoomed views (min-width 1200px) */
-@media screen and (min-width: 1200px) {
-}
+
 /* For tablets (max-width 1024px) */
 @media screen and (max-width: 1024px) {
   .cozy-leaf__navbar-links p a {
@@ -126,5 +124,17 @@
   }
   .cozy-leaf__navbar-mobile p a {
     font-size: 2rem;
+  }
+}
+/* 4K 2560px  */
+@media screen and (min-width: 2560px) {
+  .cozy-leaf__navbar-container {
+    padding: 0 2rem;
+  }
+  .cozy-leaf__navbar-icon {
+    font-size: 9rem;
+  }
+  .cozy-leaf__navbar-links p a {
+    font-size: 2.5rem;
   }
 }

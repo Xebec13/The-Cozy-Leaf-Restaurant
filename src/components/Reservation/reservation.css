@@ -37,6 +37,7 @@
   padding: 1rem;
   cursor: pointer;
 }
+
 /* ---------------------------PHOTO SECTION--------------------------- */
 .cozy-leaf__reservation-photo {
   width: 100%;
@@ -118,12 +119,19 @@
   font-size: 1rem;
   padding: 1%;
   border: none;
-  background-color: var(--font-color);
   color: var(--second-bg);
   font-weight: 700;
   border-radius: 10px;
   cursor: pointer;
   margin: 1rem 0.5rem;
+}
+.cozy-leaf__reservation-form-buttons button:nth-child(1){
+  background-color: var(--section2-bg);
+  color: var(--font-color);
+}
+.cozy-leaf__reservation-form-buttons button:nth-child(2){
+  background-color: var(--section1-bg);
+  color: var(--font-color);
 }
 
 /* ---------------------------SCREEN--------------------------- */

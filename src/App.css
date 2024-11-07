@@ -29,22 +29,27 @@ h1 {
 /* 600px  */
 @media screen and (max-width: 600px) {
   section {
-    height: 80vh;
+    height: 100%;
+    padding: 2rem;
   }
   h1 {
     font-size: 2.5rem;
   }
-  section {
-    padding: 1rem 1.5rem;
-  }
+
 }
 
 /* 400px  */
 @media screen and (max-width: 400px) {
   section {
-    height: 100%;
+    padding: 1.5rem 1rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+/* 4K 2560px  */
+@media screen and (min-width: 2560px) {
+  h1 {
+    font-size: 9rem;
   }
 }

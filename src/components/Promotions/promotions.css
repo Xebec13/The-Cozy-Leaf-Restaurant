@@ -1,5 +1,8 @@
 .cozy-leaf__promotions-container {
   background-color: var(--section2-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /* ---------------------------TITLE SECTION--------------------------- */
@@ -22,7 +25,6 @@
 
 .cozy-leaf__promotions-info div {
   display: flex;
-  align-items: baseline;
   border-bottom: 5px solid;
 }
 
@@ -52,13 +54,22 @@
     flex-direction: column;
     justify-content: center;
   }
-  .cozy-leaf__promotions-info {
-    justify-content: space-around;
+  .cozy-leaf__promotions-info div{
+    margin-bottom: 15px;
   }
   .cozy-leaf__promotions-info div h2 {
     font-size: 1.5rem;
   }
   .cozy-leaf__promotions-info div p {
     font-size: 1rem;
+  }
+}
+/* For smaller mobile screens (max-width 400px) */
+@media screen and (max-width: 400px) {
+  .cozy-leaf__promotions-info div h2 {
+    font-size: 1rem;
+  }
+  .cozy-leaf__promotions-info div p {
+    font-size: .8rem;
   }
 }
